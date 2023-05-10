@@ -9,6 +9,7 @@
 </head>
 <body>
     <div id="loader"></div>
+    <div id="delay" style="display: none;"></div>
     <!--Header start-->
     <table id="header" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="black">
         <tr>
@@ -457,16 +458,11 @@
     </tr>
 </table>
 <!--footer 2 end-->
-<!--Adding embedded code of a youtube video to delay the  loading time-->
-<iframe width="745" height="419" src="https://www.youtube.com/embed/8dWL3wF_OMw" title="JavaScript Full Course for free 🌐 (2023)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<iframe width="745" height="419" src="https://www.youtube.com/embed/8dWL3wF_OMw" title="JavaScript Full Course for free 🌐 (2023)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<iframe width="745" height="419" src="https://www.youtube.com/embed/8dWL3wF_OMw" title="JavaScript Full Course for free 🌐 (2023)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<iframe width="745" height="419" src="https://www.youtube.com/embed/8dWL3wF_OMw" title="JavaScript Full Course for free 🌐 (2023)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yJg-Y5byMMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yJg-Y5byMMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yJg-Y5byMMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yJg-Y5byMMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <script>
+    setTimeout(function() {
+        var delaying = document.getElementById("delay");
+        delay.style.display = "block";
+    }, 4500);
     window.addEventListener('load', function(){
         const loader = document.getElementById("loader");
         loader.style.display = 'none';
